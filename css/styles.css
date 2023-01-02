@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+.header{
+    border-top: 50px;
+    background-color: #4995e6;
+}
+.headerButton{
+    float: right;
+    background-color: #4995e6;
+    border: none;
+    outline: none;
+    padding: 10px;
+    color: #ffffff;
+    cursor: pointer;
+}
+.icons{
+    width: 20px;
+}
