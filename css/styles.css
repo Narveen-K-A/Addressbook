@@ -3,21 +3,108 @@
     padding: 0;
 }
 body{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: sans-serif;
 }
 .header{
     border-top: 50px;
-    background-color: #4995e6;
 }
-.headerButton{
-    float: right;
-    background-color: #4995e6;
-    border: none;
-    outline: none;
-    padding: 10px;
-    color: #ffffff;
+.displayflex{
+    display: flex;
+}
+.cursorpointer{
     cursor: pointer;
 }
-.icons{
+.bgcolor{
+    background-color: #4995e6;
+}
+.white{
+    color:#ffffff;
+}
+.padding10{
+    padding: 10px;
+}
+.justify{
+    justify-content: space-between;
+}
+.justifycenter{
+    justify-content: center;
+}
+.align{
+    align-items: center;
+}
+.marginleft{
+    margin-left: 40px;
+}
+.marginright{
+    margin-right: 40px;
+}
+.icon20{
     width: 20px;
+}
+.icon15{
+    width: 15px;
+}
+.icon50{
+    width: 50px;
+}
+.mainBody{
+    margin: 75px 350px;
+    border-radius: 10px;
+}
+.width300{
+    width: 300px;
+}
+.login{
+    background-color: #ffffff;
+    border: 1px solid #4995e6;
+    width: 200px;
+    border-radius: 15px;
+}
+.bluecolor{
+    color:#4995e6;
+}
+.outlinenone{
+    outline: none;
+}
+a{
+    text-decoration: none;
+}
+.bordernone{
+    border: none;
+}
+.borderbottom{
+    border-bottom: 1px solid #a8acb3;
+}
+.margin10{
+    margin: 20px;
+}
+.textcenter{
+    text-align: center;
+}
+.lightbluebg{
+    background-color: #b1c1da;
+}
+.margin20{
+    margin: 30px;
+}
+.bgwhite{
+    background-color: #ffffff;
+}
+.icon53{
+    width: 53px;
+}
+.heightbody{
+    height: 600px;
+}
+.login:hover{
+    background-color: #4995e6;
+    color:#ffffff;
+}
+#uname_error,
+#pswd_error,
+#fname_error,
+#email_error,
+#cpswd_error{
+    color: red;
+    visibility:hidden;      
 }
