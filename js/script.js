@@ -9,12 +9,12 @@ function validateform(){
     var validatepassWord = passWordValidate(passWord);
     var validateemailId = emailIdValidate(emailId);
     var validatefullName = fullNameValidate(fullName);
-    var validatecpassWord = cpassWordValidate(cpassWord);
+    var validatecpassWord = cpassWordValidate(cpassWord,passWord);
 
     if(validateuserName && validatepassWord && validateemailId && validatefullName && validatecpassWord)
-		return true;
+		  return true;
     else 
-		return false;
+		  return false;
 }
 function error(id){
     document.getElementById(id).style.visibility="visible";
@@ -64,12 +64,16 @@ function fullNameValidate(fullName){
     }
 }
 
-function cpassWordValidate(cpassWord){ 
+function cpassWordValidate(cpassWord,passWord){ 
     if(cpassWord.value==""){
       error('cpswd_error');  
       return false;
-    }else{
-       success('cpswd_error');
+    }else if(cpassWord.value != passWord.value){
+      error('cpaswd_error');  
+      return false;
+    }
+    else{
+       success('cpaswd_error');
        return true;
     }
 }
@@ -84,7 +88,7 @@ function validatemyform(){
     if(validateuserName && validatepassWord)
         return true;
     else 
-		return false;
+		    return false;
 }
 
 function error(id){

@@ -39,7 +39,8 @@ body{
     margin-right: 40px;
 }
 .icon20{
-    width: 20px;
+    width: 25px;
+    margin-right: 10px;
 }
 .icon15{
     width: 15px;
@@ -48,8 +49,9 @@ body{
     width: 50px;
 }
 .mainBody{
-    margin: 75px 350px;
+    margin: 0px 350px;
     border-radius: 10px;
+    padding: 50px;
 }
 .width300{
     width: 300px;
@@ -93,18 +95,43 @@ a{
 .icon53{
     width: 53px;
 }
-.heightbody{
-    height: 600px;
-}
 .login:hover{
     background-color: #4995e6;
     color:#ffffff;
+}
+.padding30{
+    padding: 30px;
+}
+.whitediv{
+    width: 97%;
+    padding: 10px;
+    justify-content: flex-end;
+}
+.borderleft{
+    border-radius: 10px 0px 0px 10px;
+    box-shadow: 0px 5px 8px #888888;
+}
+.borderright{
+    border-radius: 0px 10px 10px 0px;
+    box-shadow: 0px 5px 8px #888888;
 }
 #uname_error,
 #pswd_error,
 #fname_error,
 #email_error,
-#cpswd_error{
+#cpswd_error,
+#cpaswd_error{
     color: red;
     visibility:hidden;      
+}
+.icon30{
+    width: 30px;
+    margin-left: 10px;
+}
+.user{
+    width: 120px;
+    margin: 0px 40px 0px 40px;
+}
+.userwidth{
+    width: 100px;
 }
