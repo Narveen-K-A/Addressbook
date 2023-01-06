@@ -9,3 +9,4 @@ CREATE TABLE registerdata(Firstname varchar(20),
 						Cpassword varchar(20));
 
 SELECT * FROM registerdata;
+

@@ -12,23 +12,24 @@
                                     <cfqueryparam cfsqltype="cf_sql_varchar" value="#arguments.fieldPswd#">,
                                     <cfqueryparam cfsqltype="cf_sql_varchar" value="#arguments.fieldCpswd#">)
         </cfquery>
+        <cflocation url="login.cfm">
     </cffunction>
     <cffunction name="checkFordata" access="remote">
         <cfargument name="fieldPswd" default="#form.password#">
         <cfargument name="fieldUname" default="#form.username#">
         <cfif structKeyExists(form,'formsubmit')>
             <cfquery name="infoCheck">
-                SELECT count(*) records
+                SELECT Firstname
                 FROM registerdata
-                where Username = <cfqueryparam cfsqltype="cf_sql_varchar" value="#arguments.fieldUname#">
-                and Userpassword = <cfqueryparam cfsqltype="cf_sql_varchar" value="#arguments.fieldPswd#">
+                WHERE Username = <cfqueryparam cfsqltype="cf_sql_varchar" value="#arguments.fieldUname#">
+                AND Userpassword = <cfqueryparam cfsqltype="cf_sql_varchar" value="#arguments.fieldPswd#">
             </cfquery>
-            <cfif infoCheck.records == 1>
+            <cfset session.userInfo=infoCheck.Firstname>
+            <cfif infoCheck.recordCount>
                 <cfset session.flag = 1>
                 <cflocation url="view.cfm" addtoken="no">
             <cfelse>
-                <cflocation url="login.cfm" addtoken="no">
-                <cfset structClear(session)>
+                <cfreturn "Please enter a valid password!">
             </cfif>
         </cfif>
     </cffunction>

@@ -84,7 +84,7 @@ a{
     text-align: center;
 }
 .lightbluebg{
-    background-color: #b1c1da;
+    background-color: #c4d6f2;
 }
 .margin20{
     margin: 30px;
@@ -129,9 +129,18 @@ a{
     margin-left: 10px;
 }
 .user{
-    width: 120px;
     margin: 0px 40px 0px 40px;
+    width: 300px;
 }
 .userwidth{
     width: 100px;
+}
+.modalButton{
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    width: 150px;
+    color: #ffffff;
+    background-color: #4995e6;
+    cursor: pointer;
 }
