@@ -10,3 +10,15 @@ CREATE TABLE registerdata(Firstname varchar(20),
 
 SELECT * FROM registerdata;
 
+CREATE TABLE createdata(Title varchar(5),
+						Firstname varchar(20),
+						Lastname varchar(20),
+						Gender varchar(20),
+						Dateofbirth varchar(20),
+						Addressofuser varchar(20),
+						Street varchar(20),
+						Emailid varchar(20),
+						Phonenumber varchar(20));
+
+SELECT * FROM createdata;
+

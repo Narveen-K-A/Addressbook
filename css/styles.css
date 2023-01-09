@@ -120,7 +120,17 @@ a{
 #fname_error,
 #email_error,
 #cpswd_error,
-#cpaswd_error{
+#cpaswd_error,
+#titleid_error,
+#firstnameid_error,
+#lastnameid_error,
+#genderid_error,
+#dobid_error,
+#fileid_error,
+#addressid_error,
+#streetid_error,
+#emailid_error,
+#phoneid_error{
     color: red;
     visibility:hidden;      
 }
@@ -129,8 +139,8 @@ a{
     margin-left: 10px;
 }
 .user{
-    margin: 0px 40px 0px 40px;
-    width: 300px;
+    margin: 0px 50px 0px 50px;
+    width: 250px;
 }
 .userwidth{
     width: 100px;
@@ -143,4 +153,41 @@ a{
     color: #ffffff;
     background-color: #4995e6;
     cursor: pointer;
+}
+.largefont{
+    font-size: 30px;
+    font-weight: 600;
+}
+.blueborder{
+    border-bottom: 2px solid #4995e6;
+    font-size: 20px;
+    font-weight: 500;
+}
+.textfield{
+    outline: none;
+}
+.width200{
+    width: 200px;
+}
+.borderstyle{
+    border-style: none none solid none;
+}
+.borderview{
+    border-bottom: 30px solid #c4d6f2;
+}
+.border1{
+    border: 1px solid #000000;
+}
+.viewbutton{
+    background-color: #ffffff;
+    border: 1px solid #4995e6;
+    width: 100px;
+    border-radius: 15px;
+    padding: 5px;
+    cursor: pointer;
+    color: #4995e6;
+}
+.viewbutton:hover{
+    background-color: #4995e6;
+    color:#ffffff;
 }
