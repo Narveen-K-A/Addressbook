@@ -1,7 +1,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="css/styles.css">
-        <script defer src="js/script.js"></script>
+        <script defer src="js/register.js"></script>
     </head>
     <body>
         <div class="lightbluebg">

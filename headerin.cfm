@@ -9,7 +9,7 @@
         <a href="login.cfm">
             <div class="cursorpointer white padding10 displayflex">
                 <div>
-                    <img class="icon15" src="assets/logouticon.png" alt="Login Icon">
+                    <img class="icon15" src="assets/logouticon.png" alt="Logout Icon" onclick="signOut();">
                 </div>
                 <div>Logout</div>
             </div>

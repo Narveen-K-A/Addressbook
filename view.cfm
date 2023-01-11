@@ -21,7 +21,9 @@
                             </a>
                         </div>
                         <div>
-                            <img src="assets/printing.png" class="icon30 cursorpointer">
+                            <button onclick="printDiv('print')" class="outlinenone bordernone bgwhite">
+                                <img src="assets/printing.png" class="icon30 cursorpointer">
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -37,7 +39,7 @@
                             <button onclick="document.getElementById('id01').style.display='block'" class="modalButton">CREATE CONTACT</button>
                         </div>
                     </div>
-                    <div>
+                    <div id="print">
                         <cfinclude template="list.cfm">
                     </div>
                 </div>
@@ -52,7 +54,7 @@
                                     <div class="bluecolor padding10 largefont">CREATE CONTACT</div>
                                 </div>
                                 <div class="padding10 bluecolor blueborder">Personal Contact</div>
-                                <form method="post" name="fromCreate" onsubmit="return validatecreateform()">
+                                <form method="post" name="fromCreate" onsubmit="validatecreateform()">
                                     <div class="displayflex justify">
                                         <div>
                                             <div class="bluecolor padding10">Title</div>

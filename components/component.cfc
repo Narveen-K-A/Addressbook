@@ -58,7 +58,7 @@
     </cffunction>
     <cffunction name="selectData" access="public" returnType="query">
         <cfquery name="datacollection">
-            SELECT Title,Firstname,Lastname,Emailid,Phonenumber FROM createdata
+            SELECT Title,Firstname,Lastname,Gender,Emailid,Phonenumber FROM createdata
         </cfquery>
         <cfreturn datacollection>
     </cffunction>

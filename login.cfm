@@ -1,7 +1,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="css/styles.css">
-        <script defer src="js/script.js"></script>
+        <script defer src="js/login.js"></script>
     </head>
     <body>
         <cfoutput>
@@ -38,7 +38,7 @@
                                         <img class="icon50 cursorpointer" src="assets/facebook.png" alt="Facebook Logo">
                                     </div>
                                     <div class="margin10">
-                                        <img class="icon53 cursorpointer" src="assets/google.png" alt="Google Logo">
+                                        <img class="icon53 cursorpointer g-signin2" data-onsuccess="onSignIn" src="assets/google.png" alt="Google Logo">
                                     </div>
                                 </div>
                             </div>

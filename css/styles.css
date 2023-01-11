@@ -191,3 +191,6 @@ a{
     background-color: #4995e6;
     color:#ffffff;
 }
+.tableborder{
+    border-bottom: 1px solid #888888;
+}
