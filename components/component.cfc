@@ -34,7 +34,7 @@
             </cfif>
         </cfif>
     </cffunction>
-    <cffunction name="getEditData" access="public">
+    <cffunction name="getCreateData" access="public">
         <cfargument name="fieldtitlename" type="any" default="#form.titlename#">
         <cfargument name="fieldfirstname" type="any" default="#form.firstname#">
         <cfargument name="fieldlastname" type="any" default="#form.lastname#">
@@ -45,21 +45,22 @@
         <cfargument name="fieldemailname" type="any" default="#form.emailname#">
         <cfargument name="fieldphonename" type="any" default="#form.phonename#">
         <cfquery name="addresscollection">
-            INSERT INTO createdata VALUES(<cfqueryparam cfsqltype="cf_sql_varchar" value="#arguments.fieldtitlename#">,
-                                    <cfqueryparam cfsqltype="cf_sql_varchar" value="#arguments.fieldfirstname#">,
-                                    <cfqueryparam cfsqltype="cf_sql_varchar" value="#arguments.fieldlastname#">,
-                                    <cfqueryparam cfsqltype="cf_sql_varchar" value="#arguments.fieldgendername#">,
-                                    <cfqueryparam cfsqltype="cf_sql_varchar" value="#arguments.fielddobname#">,
-                                    <cfqueryparam cfsqltype="cf_sql_varchar" value="#arguments.fieldaddressname#">,
-                                    <cfqueryparam cfsqltype="cf_sql_varchar" value="#arguments.fieldstreetname#">,
-                                    <cfqueryparam cfsqltype="cf_sql_varchar" value="#arguments.fieldemailname#">,
-                                    <cfqueryparam cfsqltype="cf_sql_varchar" value="#arguments.fieldphonename#">)
+            INSERT INTO createdata(Title,Firstname,Lastname,Gender,Dateofbirth,Addressofuser,Street,Emailid,Phonenumber) 
+            VALUES(<cfqueryparam cfsqltype="cf_sql_varchar" value="#arguments.fieldtitlename#">,
+                    <cfqueryparam cfsqltype="cf_sql_varchar" value="#arguments.fieldfirstname#">,
+                    <cfqueryparam cfsqltype="cf_sql_varchar" value="#arguments.fieldlastname#">,
+                    <cfqueryparam cfsqltype="cf_sql_varchar" value="#arguments.fieldgendername#">,
+                    <cfqueryparam cfsqltype="cf_sql_varchar" value="#arguments.fielddobname#">,
+                    <cfqueryparam cfsqltype="cf_sql_varchar" value="#arguments.fieldaddressname#">,
+                    <cfqueryparam cfsqltype="cf_sql_varchar" value="#arguments.fieldstreetname#">,
+                    <cfqueryparam cfsqltype="cf_sql_varchar" value="#arguments.fieldemailname#">,
+                    <cfqueryparam cfsqltype="cf_sql_varchar" value="#arguments.fieldphonename#">)
         </cfquery>
         <cflocation url="view.cfm">
     </cffunction>
     <cffunction name="selectData" access="public" returnType="query">
         <cfquery name="datacollection">
-            SELECT Title,Firstname,Lastname,Gender,Emailid,Phonenumber FROM createdata
+            SELECT Personid,Title,Firstname,Lastname,Gender,Emailid,Phonenumber FROM createdata
         </cfquery>
         <cfreturn datacollection>
     </cffunction>

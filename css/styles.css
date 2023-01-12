@@ -130,7 +130,17 @@ a{
 #addressid_error,
 #streetid_error,
 #emailid_error,
-#phoneid_error{
+#phoneid_error,
+#editTitle_error,
+#editFname_error,
+#editLname_error,
+#editGender_error,
+#editDob_error,
+#editFile_error,
+#editAddress_error,
+#editStreet_error,
+#editEmail_error,
+#editPhone_error{
     color: red;
     visibility:hidden;      
 }
@@ -193,4 +203,10 @@ a{
 }
 .tableborder{
     border-bottom: 1px solid #888888;
+}
+.spancolor{
+    color: #000000;
+}
+.viewwidth{
+    width: 500px;
 }

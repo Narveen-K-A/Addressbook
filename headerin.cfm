@@ -11,7 +11,9 @@
                 <div>
                     <img class="icon15" src="assets/logouticon.png" alt="Logout Icon">
                 </div>
-                <div><input type="submit" value="LOGOUT" name="logout" class="white bgcolor outlinenone bordernone"></div>
+                <div>
+                    <input type="submit" value="LOGOUT" name="logout" class="white bgcolor outlinenone bordernone cursorpointer">
+                </div>
             </div>
         </form>
         <cfif structKeyExists(form,'logout')>

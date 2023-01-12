@@ -8,7 +8,7 @@ function validatemyform(){
     if(validateuserName && validatepassWord)
         return true;
     else 
-		    return false;
+		return false;
 }
 
 function error(id){

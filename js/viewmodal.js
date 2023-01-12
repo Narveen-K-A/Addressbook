@@ -1,15 +1,14 @@
 function openPage(values){
     $.ajax({
-        url:'components/view.cfc?method=view',
+        url:'components/view.cfc?method=viewFunction',
         type:'post',
         data:{
-            method:'view',
-            Email: values,
+            method:'viewFunction',
+            valuepass: values,
             dataType:'json'
         },
         success:function(data){
-            alert(data);
-            var obj = JSON.parse(data);
+             var obj = JSON.parse(data);
             $('#viewtitle').html(obj.TITLE);
             $('#viewfname').html(obj.FIRSTNAME);
             $('#viewlname').html(obj.LASTNAME);
