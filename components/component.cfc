@@ -1,5 +1,5 @@
 <cfcomponent>
-    <cffunction name="getRegisterdata" access="remote">
+    <cffunction name="getRegisterdata" access="public">
         <cfargument name="fieldFname" type="any" default="#form.fullname#">
         <cfargument name="fieldMailid" type="any" default="#form.emailid#">
         <cfargument name="fieldUname" type="any" default="#form.username#">
@@ -14,7 +14,7 @@
         </cfquery>
         <cflocation url="login.cfm">
     </cffunction>
-    <cffunction name="checkFordata" access="remote">
+    <cffunction name="checkFordata" access="public">
         <cfargument name="fieldPswd" default="#form.password#">
         <cfargument name="fieldUname" default="#form.username#">
         <cfif structKeyExists(form,'formsubmit')>
@@ -29,11 +29,12 @@
                 <cfset session.flag = 1>
                 <cflocation url="view.cfm" addtoken="no">
             <cfelse>
+                <cflocation url="login.cfm" addtoken="no">
                 <cfreturn "Please enter a valid password!">
             </cfif>
         </cfif>
     </cffunction>
-    <cffunction name="getCreateData" access="remote">
+    <cffunction name="getEditData" access="public">
         <cfargument name="fieldtitlename" type="any" default="#form.titlename#">
         <cfargument name="fieldfirstname" type="any" default="#form.firstname#">
         <cfargument name="fieldlastname" type="any" default="#form.lastname#">
@@ -61,5 +62,16 @@
             SELECT Title,Firstname,Lastname,Gender,Emailid,Phonenumber FROM createdata
         </cfquery>
         <cfreturn datacollection>
+    </cffunction>
+    <cffunction name="deletedata" access="remote">
+		<cfquery name="delete">
+			DELETE FROM createdata
+			WHERE Emailid=<cfqueryparam value="#url.emailid#" cfsqltype="cf_sql_varchar">
+		</cfquery>
+		<cflocation url="..\view.cfm">
+	</cffunction>
+    <cffunction name="logout" access="public">
+        <cfset structClear(session)>
+        <cflocation url="login.cfm" addtoken="no">
     </cffunction>
 </cfcomponent>

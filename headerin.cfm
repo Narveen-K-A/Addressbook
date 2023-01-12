@@ -6,13 +6,16 @@
         <div class="white">ADDRESS BOOK</div>
     </div>
     <div class="headerRight marginright displayflex align">
-        <a href="login.cfm">
+        <form method="post">
             <div class="cursorpointer white padding10 displayflex">
                 <div>
-                    <img class="icon15" src="assets/logouticon.png" alt="Logout Icon" onclick="signOut();">
+                    <img class="icon15" src="assets/logouticon.png" alt="Logout Icon">
                 </div>
-                <div>Logout</div>
+                <div><input type="submit" value="LOGOUT" name="logout" class="white bgcolor outlinenone bordernone"></div>
             </div>
-        </a>
+        </form>
+        <cfif structKeyExists(form,'logout')>
+            <cfinvoke method="logout" component="components/component">
+        </cfif>
     </div>
 </div>
