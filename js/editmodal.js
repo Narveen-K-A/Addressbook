@@ -8,7 +8,7 @@ function editPage(value){
             dataType:'json'
         },
         success:function(data){
-             var obj = JSON.parse(data);
+            var obj = JSON.parse(data);
             $('#edithide').val(obj.PERSONID);
             $('#editTitle').val(obj.TITLE);
             $('#editFname').val(obj.FIRSTNAME);

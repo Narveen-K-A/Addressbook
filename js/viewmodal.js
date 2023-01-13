@@ -8,7 +8,7 @@ function openPage(values){
             dataType:'json'
         },
         success:function(data){
-             var obj = JSON.parse(data);
+            var obj = JSON.parse(data);
             $('#viewtitle').html(obj.TITLE);
             $('#viewfname').html(obj.FIRSTNAME);
             $('#viewlname').html(obj.LASTNAME);

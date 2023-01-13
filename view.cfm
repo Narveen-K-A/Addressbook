@@ -244,7 +244,7 @@
                                         <div class="displayflex justify">
                                             <div>
                                                 <div class="bluecolor padding10">Title</div>
-                                                    <select name="titlename" id="titleid" class="borderbottom borderstyle">
+                                                    <select name="titlename" id="titleid" class="borderbottom borderstyle" onblur="validatecreateform()">
                                                         <option selected="" ></option>
                                                         <option value="Mr">Mr</option>
                                                         <option value="Mrs">Mrs</option>
@@ -254,19 +254,19 @@
                                                 </div>
                                             <div>
                                                 <div class="bluecolor padding10">First Name*</div>   
-                                                <input type="text" name="firstname" id="firstnameid" placeholder="Your First Name" class="outlinenone width200 borderbottom borderstyle"><br>
+                                                <input type="text" name="firstname" id="firstnameid" placeholder="Your First Name" class="outlinenone width200 borderbottom borderstyle" onblur="validatecreateform()"><br>
                                                 <small id="firstnameid_error">Please fill this field!</small>
                                             </div>
                                             <div>
                                                 <div class="bluecolor padding10">Last Name*</div>   
-                                                <input type="text" name="lastname" id="lastnameid" placeholder="Your Last Name" class="outlinenone width200 borderbottom borderstyle"><br>
+                                                <input type="text" name="lastname" id="lastnameid" placeholder="Your Last Name" class="outlinenone width200 borderbottom borderstyle" onblur="validatecreateform()"><br>
                                                 <small id="lastnameid_error">Please fill this field!</small>
                                             </div>
                                         </div>
                                         <div class="displayflex justify">
                                             <div>
                                                 <div class="bluecolor padding10">Gender*</div>
-                                                <select name="gendername" id="genderid" class="borderbottom borderstyle outlinenone width200">
+                                                <select name="gendername" id="genderid" class="borderbottom borderstyle outlinenone width200" onblur="validatecreateform()">
                                                     <option selected=""></option>
                                                     <option value="Male">Male</option>
                                                     <option value="Female">Female</option>
@@ -275,14 +275,14 @@
                                             </div>
                                             <div>
                                                 <div class="bluecolor padding10">Date Of Birth*</div>   
-                                                <input type="date" name="dobname" id="dobid" class="outlinenone width200 borderbottom borderstyle"><br>
+                                                <input type="date" name="dobname" id="dobid" class="outlinenone width200 borderbottom borderstyle" onblur="validatecreateform()"><br>
                                                 <small id="dobid_error">Please fill this field!</small>
                                             </div>
                                         </div>
                                         <div class="displayflex justify">
                                             <div>
                                                 <div class="bluecolor padding10">Upload Photo*</div>
-                                                <input type="file" name="filename" id="fileid" class="outlinenone width200"><br>
+                                                <input type="file" name="filename" id="fileid" class="outlinenone width200" onblur="validatecreateform()"><br>
                                                 <small id="fileid_error">Please fill this field!</small>
                                             </div>
                                         </div>
@@ -290,24 +290,24 @@
                                         <div class="displayflex justify">
                                             <div>
                                                 <div class="bluecolor padding10">Address*</div>
-                                                <input type="text" name="addressname" id="addressid" placeholder="Your Address" class="outlinenone width200 borderbottom borderstyle"><br>
+                                                <input type="text" name="addressname" id="addressid" placeholder="Your Address" class="outlinenone width200 borderbottom borderstyle" onblur="validatecreateform()"><br>
                                                 <small id="addressid_error">Please fill this field!</small>
                                             </div>
                                             <div>
                                                 <div class="bluecolor padding10">Street*</div>   
-                                                <input type="text" name="streetname" id="streetid" placeholder="Your Street Name" class="outlinenone width200 borderbottom borderstyle"><br>
+                                                <input type="text" name="streetname" id="streetid" placeholder="Your Street Name" class="outlinenone width200 borderbottom borderstyle" onblur="validatecreateform()"><br>
                                                 <small id="streetid_error">Please fill this field!</small>
                                             </div>
                                         </div>
                                         <div class="displayflex justify">
                                             <div>
                                                 <div class="bluecolor padding10">Email Id*</div>
-                                                <input type="text" name="emailname" id="emailid" placeholder="Your Email Address" class="outlinenone width200 borderbottom borderstyle"><br>
+                                                <input type="text" name="emailname" id="emailid" placeholder="Your Email Address" class="outlinenone width200 borderbottom borderstyle" onblur="validatecreateform()"><br>
                                                 <small id="emailid_error">Please fill this field!</small>
                                             </div>
                                             <div>
                                                 <div class="bluecolor padding10">Phone No*</div>   
-                                                <input type="text" name="phonename" id="phoneid" placeholder="Your Phone No" class="outlinenone width200 borderbottom borderstyle"><br>
+                                                <input type="text" name="phonename" id="phoneid" placeholder="Your Phone No" class="outlinenone width200 borderbottom borderstyle" onblur="validatecreateform()"><br>
                                                 <small id="phoneid_error">Please fill this field!</small>
                                             </div>
                                         </div>
